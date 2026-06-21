@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About My Dad</title>
+
+    <style>
+        /* Background + fade animation */
+        body {
+            background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+            animation: fadeIn 1.2s ease-in-out;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Header */
+        header {
+            background: #2a6fdb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Sections */
+        .intro, .details, .fathers-day, .gallery-section, .love-button {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Main photo */
+        .dad-photo {
+            width: 200px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #2a6fdb;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Father's Day note */
+        .fathers-day {
+            background: #fff3cd;
+            border-left: 6px solid #ffca28;
+        }
+
+        /* Button */
+        .love-button {
+            text-align: center;
+        }
+
+        .dad-button {
+            background: #ff6f61;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .dad-button:hover {
+            background: #ff3b2e;
+            transform: scale(1.08);
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            width: 100%;
+            min-height: 100vh;
+            background: #f0f7ff;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+
+        .timeline-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #2a6fdb;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            padding-left: 20px;
+            border-left: 4px solid #2a6fdb;
+            max-width: 700px;
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: slideIn 0.8s forwards;
+        }
+
+        .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.8s; }
+        .timeline-item:nth-child(5) { animation-delay: 1s; }
+
+        .timeline-year {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .timeline-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .timeline-img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About My Dad</h1>
+    </header>
+
+    <section class="intro">
+        <img src="IMG_0695.jpeg" alt="My Dad" class="dad-photo">
+        <p>My dad is an amazing person. Here are some things about him.</p>
+    </section>
+
+    <section class="details">
+        <h2>Who He Is</h2>
+        <p>My dad is someone who works hard, cares deeply, and always puts family first. He is patient, thoughtful, and always ready to help anyone who needs it. Whether he’s fixing something, giving advice, or making us laugh, he brings so much love and strength into our home.</p>
+
+        <h2>Why He Inspires Me</h2>
+        <p>My dad always puts me first. When I felt left out because my friends had a PlayStation, he surprised me with one. When I needed a phone, he immediately took me to T‑Mobile and bought me one. You have been in all my concerts — even if you couldn’t, you tried your best to make it. He supports me in every way, and I’m grateful for him every day.</p>
+
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>He can fix almost anything, even things that look impossible to fix.</li>
+            <li>He has a special “dad sense” — he always knows when something’s wrong and how to make it better.</li>
+            <li>He never gets tired of helping me, no matter how busy he is.</li>
+        </ul>
+    </section>
+
+    <section class="fathers-day">
+        <h2>Father’s Day Note</h2>
+        <p>Dad, thank you for everything you do for me. You always put my happiness first, and you never hesitate to support me. From surprising me with a PlayStation to getting me a new phone when I needed one, you always show your love through your actions. I’m grateful for you every single day. Happy Father’s Day to the best dad I could ever ask for.</p>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="IMG_0923.jpeg" alt="Dad and me 1">
+            <img src="IMG_0934.jpeg" alt="Dad and me 2">
+            <img src="IMG_2719.jpeg" alt="Dad and me 3">
+        </div>
+    </section>
+
+    <!-- ⭐ FULL PAGE TIMELINE WITH PICTURES ⭐ -->
+    <section class="timeline-section">
+        <h2 class="timeline-title">Family Memories Timeline</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                    <img src="IMG_0923.jpeg" class="timeline-img" alt="New-Year Celebration">
+                    <h3>New-Year Celebration</h3>
+                    <p>Celebrated New Year with my family and visited the temple together.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                    <img src="IMG_0239.jpeg" class="timeline-img" alt="Diwali Celebration">
+                    <h3>Diwali with Family</h3>
+                    <p>Spent Diwali with my family, filled with lights, sweets, and happiness.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                    <img src="IMG_0380.jpeg" class="timeline-img" alt="Toyota Showroom Visit">
+                    <h3>Toyota Showroom Visit</h3>
+                    <p>Visited the Toyota showroom with my family and Venkat Uncle’s family when they switched their car.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+                <div class="timeline-content">
+                    <img src="IMG_1975.jpeg" class="timeline-img" alt="Housewarming Ceremony">
+                    <h3>Housewarming Ceremony</h3>
+                    <p>We invited over 50 families to celebrate our new home together.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+                <div class="timeline-content">
+                    <img src="IMG_2781.jpeg" class="timeline-img" alt="Netherlands FIFA Dutch Bus">
+                    <h3>Netherlands Celebration</h3>
+                    <p>Went to the Netherlands celebration before the FIFA game for the Orange Dutch bus.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="love-button">
+        <button class="dad-button">I love you Dad and Happy Father's Day</button>
+    </section>
+
+    <footer>
+        <p>Made with love by Anirudh</p>
+    </footer>
+
+</body>
+</html>
